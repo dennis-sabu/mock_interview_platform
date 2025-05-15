@@ -1,0 +1,23 @@
+import React from 'react'
+import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+
+
+const FormField = () => (
+<FormField
+          control={form.control}
+          name="username"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Username</FormLabel>
+              <FormControl>
+                <Input placeholder="s hadcn" {...field} />
+              </FormControl>
+              <FormDescription>
+                This is your public display name.
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />);
+export default FormField
